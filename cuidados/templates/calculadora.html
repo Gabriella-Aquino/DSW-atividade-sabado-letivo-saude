@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <header class="calculadora-header">
+      <h1>Calculadora de IMC <span>Avalie seu Peso Ideal</span></h1>
+    </header>
+    <main class="calculadora-main">
+      <section class="imc-information">
+        <p>
+          O Índice de Massa Corporal (IMC) é uma métrica simples que permite
+          calcular a relação entre o seu peso e altura. Desenvolvido pela
+          Organização Mundial da Saúde (OMS), o IMC é amplamente utilizado para
+          ajudar a avaliar se o peso de uma pessoa está dentro do considerado
+          saudável.
+        </p>
+      </section>
+      <section class="calculadora-form-section">
+        <form class="calculadora-form" onsubmit="calcularIMC(event)">
+          <h2>Preencha os campos e descubra seu IMC</h2>
+          <div class="calculadora-form-campos">
+            <div class="calculadora-form-campo">
+              <label for="peso"> peso(kg): </label>
+              <input type="number" name="peso" step="0.01"/>
+            </div>
+            <div class="calculadora-form-campo">
+              <label for="altura">altura(metros): </label>
+              <input type="number" name="altura" step="0.01"/>
+            </div>
+          </div>
+          <button type="submit">Calcular</button>
+          <span>*Resposta sera mostrada a baixo</span>
+        </form>
+      </section>
+      <section class="resposta-section">
+        <div class="resposta-div"></div>
+      </section>
+    </main>
+  </body>
+  <script src="{% static 'js/scripts.js' %}"></script>
+</html>

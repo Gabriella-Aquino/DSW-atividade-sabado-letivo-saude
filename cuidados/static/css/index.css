@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root{
+  --main-color: #00A5CB;
+  --text-color: #232323;
+  --title-font: "Lemon", serif;
+}
+
+h1{
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+h1 span{
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+h2{
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: var(--main-color);
+}
+
+/* Index */
+
+.introdution, .development{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7% 10%;
+  color: var(--text-color);
+}
+.introdution .introdution-img-content{
+  width: 25%;
+}
+.introdution-img-content img{
+  width: 100%;
+}
+
+.introdution .text{
+  width: 55%;
+}
+
+
+.development .text{
+  width: 55%;
+}
+
+
+.conclusion{
+  padding: 10% 10%;
+  text-align: center;
+  color: white;
+  background-color: var(--main-color);
+}
+.conclusion h2{
+  color: white;
+  margin-bottom: 20px;
+}
+.conclusion p{
+  margin-bottom: 70px;
+}
+.conclusion a{
+  text-decoration: underline;
+  color: white;
+}
+
+
+
+/* calculadora imc */
+
+.calculadora-header{
+  text-align: center;
+  margin: 5% 0;
+}
+
+.calculadora-main{
+  width: 80%;
+  margin: auto;
+}
+
+.imc-information{
+  color: var(--text-color);
+  align-items: center;
+  padding: 5%;
+}
+
+.calculadora-form-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora-form{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 4%;
+  border-radius: 5px;
+  border: 1px solid var(--text-color);
+}
+.calculadora-form button{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background-color: var(--main-color);
+}
+.calculadora-form span{
+  font-size: 14px;
+  color: #757575;
+}
+.calculadora-form-campos{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.calculadora-form-campo{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+}
+.calculadora-form-campo input{
+  width: 100%;
+  padding: 10px;
+}
+
+.resposta-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+.resposta-section div{
+  padding: 5px;
+  font-weight: 500;
+}

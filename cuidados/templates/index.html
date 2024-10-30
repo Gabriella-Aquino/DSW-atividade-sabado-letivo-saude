@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde - Cuidados pessoais</title>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+  <section class="introdution">
+    <div class="text">
+      <h1>Bem-estar e Qualidade de Vida</br><span>Saúde e Cuidados Pessoais</span></h1>
+      <p>A busca por uma vida saudável começa com pequenas ações cotidianas que, com o tempo, se transformam em grandes mudanças. No nosso site, você encontrará informações e ferramentas práticas para aprimorar seus cuidados pessoais e promover o bem-estar. Ao entender mais sobre o impacto de uma rotina saudável no corpo e na mente, você estará dando um passo fundamental para viver melhor e mais feliz.</p>
+    </div>
+    <div class="introdution-img-content">
+      <img src="{% static 'img/logo.png' %}" alt="">
+    </div>
+  </section>
+  <section class="development">
+    <div><img src="{% static 'img/mulher-meditando.png' %}" alt=""></div>
+    <div class="text">
+      <h2>Benefícios da Saúde e Cuidados Pessoais</h2>
+      <p>A busca por uma vida saudável começa com pequenas ações cotidianas que, com o tempo, se transformam em grandes mudanças. No nosso site, você encontrará informações e ferramentas práticas para aprimorar seus cuidados pessoais e promover o bem-estar. Ao entender mais sobre o impacto de uma rotina saudável no corpo e na mente, você estará dando um passo fundamental para viver melhor e mais feliz.</p>
+    </div>
+  </section>
+  <section class="conclusion">
+    <h2>Chamada para Ação:</h2>
+    <p>Logo a baixo , disponibilizamos uma ferramenta útil para monitorar seu Índice de Massa Corporal (IMC), que é uma das formas de acompanhar o seu peso em relação à sua altura. Acesse a Calculadora de IMC e descubra onde você está nessa escala</p>
+    <a href="{% url 'calculadora-imc' %}">Calculadora IMC</a>
+  </section>
+</body>
+</html>
